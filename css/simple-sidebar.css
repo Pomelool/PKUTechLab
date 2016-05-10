@@ -100,11 +100,11 @@
 }
 
 .sidebar-nav > .sidebar-brand-lg a:hover {
-    color: #5fcf80;
+    color: #ffffff;
     background: none;
 }
 .sidebar-nav > .sidebar-brand-sm a:hover {
-    color: #5fcf80;
+    color: #ffffff;
     background: none;
 }
 
@@ -112,10 +112,10 @@
     height: 110px;
 }
 .sidebar-seprator-top{
-    height:20px;
+  height:20px;
 }
 #container-me{
-    padding:0;   
+    padding:0;
 }
 
 @media(min-width:768px) {
