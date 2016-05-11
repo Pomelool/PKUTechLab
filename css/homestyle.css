@@ -1,18 +1,23 @@
 #jumbo-me{
-  background-color: #5fcf80;
+  background-image: url("./images/pkucloud1h100.png");
+  background-size: 100% 100%;
+  background-color: #97180b;
   color: #FFFFFF;
   height: 600px;
 }
 #brand-me{
   text-align = center;
-  margin-left: 30%;
-  margin-top:10px;
+  margin-left: 22%;
+  margin-top:40px;
   width:200px;
-  color: #5fcf80;
+  color: #97180b;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+#header-img{
+  margin-left: 30%;
+}
 #freetrial{
-  color: #5fcf80;
+  color: #97180b;
 }
 .navbar-b-me > li > a{
   font-size: 16px;
@@ -28,22 +33,18 @@
   width: 500px;
 }
 .words{
-  margin-top:200px;
+  margin-top:22%;
 }
 .panel-me{
-  position: fixed;
+  position:fixed;
   width: 540px;
   height: 300px;
   border:none;
   left: 50%;
-  top:20%;
-  margin-top: 60px;
-
-}
-
-.panel-me{
+  margin-top: 30%;
   border-radius: 15px;
 }
+
 
 .panel-me > .panel-body{
   background-color: #FFFFFF;
@@ -52,7 +53,7 @@
 .panel-me > .panel-heading {
     border-radius: 15px 15px 0 0;
     border:1px solid black;
-    background-color: #637A91;
+    background-color: #777777;
     color: white;
     border:none;
     text-align: center;
@@ -105,7 +106,7 @@
 }
 .button{
   border-radius: 4px 4px 4px 4px;
-  background-color: #5fcf80;
+  background-color: #97180b;
   color: #FFFFFF;
   position: relative;
   float:left;
@@ -120,7 +121,7 @@
 }
 
 .button:hover{
-  background-color: #65B863;
+  background-color: #BA0000;
 }
 
 #nav-home{
