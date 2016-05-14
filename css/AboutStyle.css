@@ -65,17 +65,6 @@
 	background: #ffffff;
 }
 
-
-.list-group > .list-group-item{
-	background-color: #f9fafa;
-}
-.list-group > .list-group-item:focus{
-	outline:0;
-}
-.list-group > .list-group-item:hover{
-	background-color: white;
-}
-
 .font-Mont{
 	font-family: 'Montserrat Alternates', sans-serif;
 }
