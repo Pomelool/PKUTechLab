@@ -15,7 +15,7 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
-
+  <script src="https://code.jquery.com/jquery.min.js"></script>
   <!-- Custom CSS -->
   <link href="../css/simple-sidebar.css" rel="stylesheet">
   <link href="../css/videoStyle.css" rel="stylesheet">
@@ -161,6 +161,38 @@
 
   </div>
   <!-- /#wrapper -->
+  <script>
+      $(document).unbind('keydown').bind('keydown', function (event) {
+      var doPrevent = false;
+      if (event.keyCode === 8) {
+          var d = event.srcElement || event.target;
+          if ((d.tagName.toUpperCase() === 'INPUT' &&
+               (
+                   d.type.toUpperCase() === 'TEXT' ||
+                   d.type.toUpperCase() === 'PASSWORD' ||
+                   d.type.toUpperCase() === 'FILE' ||
+                   d.type.toUpperCase() === 'SEARCH' ||
+                   d.type.toUpperCase() === 'EMAIL' ||
+                   d.type.toUpperCase() === 'NUMBER' ||
+                   d.type.toUpperCase() === 'DATE' )
+               ) ||
+               d.tagName.toUpperCase() === 'TEXTAREA') {
+              doPrevent = d.readOnly || d.disabled;
+          }
+          else {
+              doPrevent = true;
+          }
+      }
+
+      if (doPrevent) {
+          event.preventDefault();
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- jQuery -->
   <script src="../js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->

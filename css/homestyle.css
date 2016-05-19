@@ -1,3 +1,22 @@
+#signupDiv{
+  height:190px;
+}
+#signupDiv label{
+  width: 100px;
+  margin-bottom:6px;
+  margin-top: 6px;
+}
+#signupDiv input{
+  border:1px solid #97180b;
+  border-radius: 3px;
+  width: 250px;
+}
+#signupDiv input:focus{
+  border:2px solid #97180b;
+  outline: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
 #check-me{
   font-size: 110%;
   display: inline;
@@ -16,6 +35,11 @@ input[type=checkbox]
 }
 .modal-body{
   padding-bottom: 0;
+}
+.modal-body input:focus{
+  border:3px solid #97180b;
+  margin-bottom: 9px;
+  outline: none;
 }
 #modalSuccess{
   border-radius: 10px;
@@ -40,8 +64,17 @@ input[type=checkbox]
   background-color:#ba0000;
 }
 .modal-content{
-  height:250px;
   width:435px;
+}
+#signupModal{
+  position: fixed;
+  top:20%;
+  left:12%;
+}
+#signinModal{
+  position:fixed;
+  top:20%;
+
 }
 .signinBar{
   border:2px solid #97180b;
@@ -51,7 +84,7 @@ input[type=checkbox]
 }
 .positionModal{
   position: absolute;
-  top:10%;
+  top:30%;
   left:15%;
   margin-bottom: 0;
 }
@@ -189,6 +222,7 @@ button:hover, button:visited, button:link, button:active
   padding-left: 10px;
   font-weight: bolder;
 }
+
 .font-Mont{
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -215,6 +249,10 @@ button:hover, button:visited, button:link, button:active
   }
   #brands-combo{
     left:43%;
+  }
+  #signupModal{
+    left:16%;
+    top:23.2%;
   }
 }
 
@@ -260,4 +298,10 @@ button:hover, button:visited, button:link, button:active
   #brands-combo{
     left:38%;
   }
+  #signupModal{
+    left:0%;
+  }
+  #signinModal{
+    left:0%;
+}
 }
